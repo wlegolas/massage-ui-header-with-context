@@ -6,7 +6,7 @@ import {
   Typography
 } from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import { UserInfo } from '..';
 
 const Header = () => (
   <AppBar position="static" className="x-header">
@@ -22,15 +22,7 @@ const Header = () => (
       >
         Schedule your massege
       </Typography>
-      <IconButton
-        aria-label="Account of current user"
-        aria-controls="primary-search-account-menu"
-        aria-haspopup="true"
-        color="inherit"
-        edge="end"
-      >
-        <AccountCircle />
-      </IconButton>
+      <UserInfo />
     </Toolbar>
   </AppBar>
 )
